@@ -1,0 +1,15 @@
+output_dir: outputs/test
+data_dir: data/file.json
+maml:
+  num_train_task: 500
+  num_test_task: 3
+  k_support: 80
+  k_query: 20
+  output_batch_size: 32
+  inner_batch_size: 32
+  outer_update_lr: 0.001
+  inner_update_lr: 0.001
+  inner_update_step: 10
+  inner_update_step_eval: 40
+  meta_epoch: 10
+  log_file: log.txt
